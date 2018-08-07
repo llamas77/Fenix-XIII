@@ -1,10 +1,13 @@
 package ar.com.fenixxiii.game.lwjgl3;
 
-import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
-import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import ar.com.fenixxiii.game.Main;
+        import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+        import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+        import ar.com.fenixxiii.game.Main;
 
-/** Launches the desktop (LWJGL3) application. */
+/**
+ * Ejecuta el juego en escritorio (LWJGL3)
+ * TODO: configurar este arranque como en LWJGL2
+ */
 public class Lwjgl3Launcher {
     public static void main(String[] args) {
         createApplication();
@@ -16,7 +19,7 @@ public class Lwjgl3Launcher {
 
     private static Lwjgl3ApplicationConfiguration getDefaultConfiguration() {
         Lwjgl3ApplicationConfiguration configuration = new Lwjgl3ApplicationConfiguration();
-        configuration.setWindowedMode(1024, 768);
+        configuration.setWindowedMode(1280, 720);
         configuration.setWindowIcon("icon128.png", "icon64.png", "icon32.png", "icon16.png");
         return configuration;
     }

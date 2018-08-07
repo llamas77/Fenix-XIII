@@ -1,4 +1,5 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
+apply plugin: "kotlin-android"
 
 android {
   buildToolsVersion '27.0.0'
@@ -33,7 +34,7 @@ android {
   }
   defaultConfig {
     applicationId 'ar.com.fenixxiii.game'
-    minSdkVersion 8
+    minSdkVersion 19
     targetSdkVersion 25
   }
 }
