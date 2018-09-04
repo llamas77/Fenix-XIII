@@ -57,6 +57,7 @@ public class DesktopLauncher {
      * (inserta un nuevo comando, indicando de abrir el juego)
      */
     public static void start() {
+        System.out.println("REBOTEAAA");
         final StringBuilder cmd = new StringBuilder();
         cmd.append(System.getProperty("java.home")).append(File.separator).append("bin").append(File.separator).append("java ");
         for (final String jvmArg : ManagementFactory.getRuntimeMXBean().getInputArguments()) {
